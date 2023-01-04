@@ -142,7 +142,7 @@ img[src*=boxshot] {
 
 img[src*=download] {
 	max-height: 50px;
-	margin-left: 50px;
+	margin-left: 40px;
 }
 
 .mobile-div {
@@ -166,7 +166,7 @@ img[src*=download] {
 }
 
 .stranger-things-text h4, .stranger-things-text p{
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	margin-left: 15px;
 	color: var(--text-color-white);
 }
@@ -289,6 +289,7 @@ footer {
 /*************** Media Queries *****************/
 
 @media (max-width: 425px){
+
 	.netflix-logo {
 		max-width: 7rem;
 	}
@@ -317,11 +318,12 @@ footer {
 	}
 
 	img[src*=boxshot]{
-		height: 4rem;
+		height: 3.5rem;
 	}
 
 	.stranger-things-text {
-		margin-top: 0.5rem;
+		margin: 0.5rem 0 0 0.5rem;
+		overflow: hidden;
 	}
 
 	.stranger-things-text h4, .stranger-things-text p {
@@ -329,8 +331,9 @@ footer {
 	}
 
 	.download-status {
-		height: 6rem;
+		height: 5rem;
 		max-width: 70vw;
+		overflow: hidden;
 	}
 
 	.tv-description {
@@ -347,6 +350,10 @@ footer {
 }
 
 @media (max-width: 768px) and (min-width: 426px) {
+	.btn-signin {
+		padding: 6px;
+	}
+
 	.btn-getstarted {
 		font-size: 0.9rem;
 	}
@@ -367,6 +374,32 @@ footer {
 
 	.mobile-div {
 		margin: 0 0 2% 10%;
+	}
+}
+
+@media (max-width: 1024px) {
+
+	img[src*=boxshot]{
+		width: 4rem;
+	}
+
+	.stranger-things-text {
+		margin: 0.5rem 0 0 0.5rem;
+		width: 80%;
+		overflow: hidden;
+	}
+
+	.download-status {
+		height: 5rem;
+		overflow: hidden;
+	}
+
+	.tv-description {
+		text-align: center;
+	}
+
+	.watch {
+		width: max-content;
 	}
 }
 
