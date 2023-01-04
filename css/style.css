@@ -5,6 +5,7 @@
 	--bg-color-darkred: #e50914;
 	--bg-color-darkred-hover: #f70a16;
 	--bg-color-black: rgb(0, 0, 0);
+	--bg-color-black-with-opacity: rgb(0, 0, 0, 0.6);
 	--border-color-gray: rgb(58, 57, 57);
 	--text-color-blue: rgba(23, 106, 201, 0.637);
 	--text-color-white: rgb(247, 247, 247);
@@ -37,9 +38,8 @@
 
 
 .main-container {
-	background-color: var(--bg-color-medium-gray);
+	background-color: var(--bg-color-black-with-opacity);
 	background-blend-mode: multiply;
-	opacity: 0.5;
 	background-image: url('../images/netflix-bg.jpg');
 	background-size: cover;
 	color: var(--text-color-white);
