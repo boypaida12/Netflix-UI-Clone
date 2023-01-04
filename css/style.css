@@ -39,6 +39,7 @@
 .main-container {
 	background-color: var(--bg-color-medium-gray);
 	background-blend-mode: multiply;
+	opacity: 0.5;
 	background-image: url('../images/netflix-bg.jpg');
 	background-size: cover;
 	color: var(--text-color-white);
