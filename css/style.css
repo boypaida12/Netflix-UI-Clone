@@ -1,0 +1,373 @@
+:root {
+	--bg-color-medium-gray: rgb(87, 86, 86);
+	--bg-color-white: rgb(255, 255, 255);
+	--border-bottom-color-dark-gray: rgb(36, 36, 36);
+	--bg-color-darkred: #e50914;
+	--bg-color-darkred-hover: #f70a16;
+	--bg-color-black: rgb(0, 0, 0);
+	--border-color-gray: rgb(58, 57, 57);
+	--text-color-blue: rgba(23, 106, 201, 0.637);
+	--text-color-white: rgb(247, 247, 247);
+
+}
+
+
+* {
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+
+
+.navbar-override {
+	border: none;
+	background-color: transparent;
+}
+
+.netflix-logo {
+	max-width: 180px;
+	margin-left: 20px;
+}
+
+.btn-signin {
+	background-color: var(--bg-color-darkred);
+	color: var(--text-color-white);
+	border: none;
+}
+
+
+.main-container {
+	background-color: var(--bg-color-medium-gray);
+	background-blend-mode: multiply;
+	background-image: url('../images/netflix-bg.jpg');
+	background-size: cover;
+	color: var(--text-color-white);
+	background-position: center;
+	border-bottom: 10px solid var(--border-bottom-color-dark-gray);
+	padding-bottom: 3rem;
+}
+
+
+.description {
+	margin-top: 10rem;
+}
+
+.description h1 {
+	font-size: 4rem;
+	width: 700px;
+	display: block;
+	margin: auto;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.description h3 {
+	font-size: 1.8rem;
+}
+
+.description h4, .description-two h4 {
+	margin: 50px 0 20px;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+}
+
+.email {
+	border: 0;
+	width: 630px;
+	border-radius: 0;
+	outline: none;
+}
+
+.btn-getstarted {
+	padding: 12px;
+	font-size: 2rem;
+	border: none;
+	border-radius: 0;
+	background-color: var(--bg-color-darkred);
+	color: var(--text-color-white);
+}
+
+.btn-getstarted:hover, .btn-signin:hover{
+	background-color: var(--bg-color-darkred-hover);
+	color: var(--text-color-white);
+}
+
+
+
+/********* NETFLIX DEVICES ***********/
+.netflix-tv {
+	background-color: var(--bg-color-black);
+	border-bottom: 10px solid var(--border-bottom-color-dark-gray);
+	padding: 50px 0;
+}
+
+.tv-description {
+	color: var(--text-color-white);
+}
+
+.device-heading {
+	font-size: 2.7rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	max-width: 520px;
+}
+
+.device-description {
+	font-size: 1.6rem;
+	max-width: 550px;
+	line-height: 1.4;
+}
+
+.netflix-video {
+	position: absolute;
+	max-width: 70%;
+	margin-top: -12px;
+	margin-right: 4px;
+}
+
+.tv-card {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tv-img {
+	z-index: 1;
+}
+
+img[src*=boxshot] {
+	max-height: 80px;
+}
+
+img[src*=download] {
+	max-height: 50px;
+	margin-left: 50px;
+}
+
+.mobile-div {
+	position: relative;
+}
+
+.download-status {
+	display: flex;
+	background-color: var(--bg-color-black);
+	border: 3px solid var(--border-color-gray);
+	border-radius: 15px;
+	max-width: 310px;
+	padding: 10px 30px 10px 10px;
+	position: absolute;
+	bottom: 5%;
+	left: 22%;
+}
+
+.stranger-things-text {
+	margin-top: 20px;
+}
+
+.stranger-things-text h4, .stranger-things-text p{
+	font-size: 0.9rem;
+	margin-left: 15px;
+	color: var(--text-color-white);
+}
+
+.stranger-things-text p {
+	color: var(--text-color-blue);
+}
+
+
+/**************** FAQs *******************/
+
+.FAQs h1 {
+	color: var(--text-color-white);
+	font-size: 50px;
+	padding-bottom: 30px;
+	font-weight: bold;
+}
+
+hr {
+	border: 1px solid rgb(0, 0, 0);
+	opacity: 0.1;
+}
+
+.accordion-item-override {
+	background-color: rgb(39, 38, 38);
+	margin-bottom: 10px;
+	border: 0;
+}
+
+.accordion-item-override:first-of-type {
+	border-top-left-radius: 0rem;
+	border-top-right-radius: 0rem;
+}
+
+.accordion-item-override:last-of-type {
+	border-bottom-left-radius: 0rem;
+	border-bottom-right-radius: 0rem;
+}
+
+.btn-override {
+	background-color: rgb(39, 38, 38);
+	color: rgba(233, 230, 230, 0.925);
+
+}
+
+.btn-override:focus {
+	box-shadow: none;
+}
+
+.btn-override::after {
+	background-image: url(../images/plus.png);
+}
+
+.btn-override:not(.collapsed) {
+	color: rgba(233, 230, 230, 0.925);
+	background-color: rgb(39, 38, 38);
+}
+
+.btn-override:not(.collapsed)::after {
+	background-image: url(../images/multiply.png);
+	background-size: 17px;
+	transform: rotate(-90deg);
+}
+
+.accordion-header {
+	font-size: 1.6rem;
+	letter-spacing: 0.04rem;
+	padding: 10px;
+}
+
+.accordion-body p {
+	font-size: 1.25rem;
+	text-align: justify;
+	padding: 10px;
+	font-weight: 400;
+	color: rgba(233, 230, 230, 0.925);
+
+}
+
+.signup-container-two {
+	color: var(--text-color-white);
+}
+
+
+/*********************** FOOTER  ***********************/ 
+
+footer {
+	background-color: var(--bg-color-black);
+	color: whitesmoke;
+	padding-top: 70px;
+	padding-bottom: 10px;
+}
+
+.footer-item {
+	width: fit-content;
+	margin: auto;
+}
+
+.last {
+	padding-bottom: 2.5rem;
+}
+
+.footer a {
+	color: rgba(255, 255, 255, 0.384);
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+.footer a:hover {
+	color: var(--bg-color-darkred);
+	transition-duration: 0.35s;
+	transition-timing-function: ease-in-out;
+}
+
+.footer p {
+	width: fit-content;
+}
+
+/*************** Media Queries *****************/
+
+@media (max-width: 425px){
+	.netflix-logo {
+		max-width: 7rem;
+	}
+
+	.btn-signin {
+		font-size: 3.5vw;
+	}
+
+	.description h1 {
+		font-size: 2.7rem;
+		max-width: 95vw;
+	}
+
+	.description h3, .description h4, .description-two h4 {
+		font-size: 1.6rem;
+	}
+
+	.btn-getstarted {
+		font-size: 0.8rem;
+	}
+
+	.device-heading, .device-description {
+		max-width: 95vw;
+		margin: auto;
+		text-align: center;
+	}
+
+	img[src*=boxshot]{
+		height: 4rem;
+	}
+
+	.stranger-things-text {
+		margin-top: 0.5rem;
+	}
+
+	.stranger-things-text h4, .stranger-things-text p {
+		font-size: 0.8rem !important;
+	}
+
+	.download-status {
+		height: 6rem;
+		max-width: 70vw;
+	}
+
+	.tv-description {
+		margin-top: 1.5rem;
+	}
+
+	.FAQs h1 {
+		font-size: 2.5rem;
+	}
+
+	.shift {
+		transform: translateX(2.1rem);
+	}
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+	.btn-getstarted {
+		font-size: 0.9rem;
+	}
+
+	.netflix-devices {
+		display: block;
+		width: 200% !important;
+		text-align: center;
+	}
+
+	.tv-description {
+		margin-left: 10rem;
+	}
+
+	.FAQs h1{
+		font-size: 2.6rem;
+	}
+
+	.mobile-div {
+		margin: 0 0 2% 10%;
+	}
+}
+
+
